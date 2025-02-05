@@ -1,0 +1,13 @@
+<rotate xmlns:android="http://schemas.android.com/apk/res/android"
+    android:fromDegrees="90"> <!-- 将圆环旋转90度，使其从顶部开始 -->
+    <shape
+        android:shape="ring"
+        android:thickness="10dp"
+        android:useLevel="true">
+        <gradient
+            android:startColor="@color/white"
+            android:endColor="#00FF00"
+            android:type="sweep"
+            android:useLevel="true" />
+    </shape>
+</rotate>

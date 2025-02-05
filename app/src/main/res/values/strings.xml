@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">first</string>
+    <string name="title_activity_fullscreen">FullscreenActivity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="title_activity_pix_board">PixBoardActivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="story">
+（作者：三井）\n
+我和璃花一同走在回家路上，夕阳西下，余晖洒落，生生映出长大后的我们。拖着沉重的书包，但我的心情并不沉重。璃花走在我的身旁，就像昨天，前天，还有很久的之前一样。我看着身旁的璃花出神。\n\n
+“诶，那个是什么呀！”\n\n
+循声望去，一台老式游戏机静静躺在马路边，斑驳的外壳证明着它已饱经风雨。黑白像素的墨水屏微微闪烁，还没等我反应过来，璃花就已经捡起了它。\n\n
+“啊！”一声惊呼过后，璃花甩开了游戏机。\n\n
+我急忙冲上前去，不可能的场面却在我眼前上演了。璃花的右手已经变成了黑白的像素块，逐渐在空中消散。我拉住璃花的左手，向远处跑开，试图阻止这一切的发生。璃花身体却依旧一点点消散，直至最后一个像素块在我手中消失。\n\n
+我看向远处的游戏机，我随手找了根木棍，把游戏机翻到正面。不知道什么时候多出来个小人，虽然没有很近观察它，但刚刚绝对没有这个小人。\n\n
+这不会是璃花吧。\n\n
+游戏机里的小人似乎在拍打着游戏机屏幕，这更加坚定了我的想法。可我又该怎么样把她救回来呢。我蹲在路旁，思考着怎么样才能把她救出来呢。完全没注意到我身边早已变成了黑白的像素块。\n\n
+“救我！”我耳边传来璃花的呼救声。\n\n
+一抬眼，璃花正在对面呼喊着我的名字。我想冲过去，却被一堵无形的墙挡住。怎么拍也无济于事，我看向地面，我走过的地方变成了黑色，而别的地方依旧是白色的像素块。我还看到地面上有些数字微微发着光。\n\n
+难不成是谜题？\n\n
+我一点点尝试着，却找不到什么头绪。我又听到了璃花的声音。\n\n
+“还记得上次在海边看我们救到那只雏鸟吗？”\n\n
+我瞬间意识到脚下的图案，就是雏鸟啊！\n\n
+第一个谜题顺利解开了。但是璃花并没有因此获救，不过我有预感，一直解下去，一定能救出璃花。\n\n
+……\n\n
+……\n\n
+在璃花的提示下，终于解开了最后一个谜题，我们之间的回忆，泛起层层涟漪，我激动的抱住璃花。不觉间身旁的景色早已变回了海滩边，似乎什么也没有发生过，游戏机也早已消失不见。\n\n
+我们又回到了路上，只不过这次我紧紧握着璃花的手，绝不再让她从我的身边消失。\n\n
+    </string>
+    <string name="special_thanks">
+        特别鸣谢：三井、以及所有参与测试的玩家们！
+    </string>
+</resources>

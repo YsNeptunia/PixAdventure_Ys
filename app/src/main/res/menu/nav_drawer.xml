@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="关卡选择" />
+        <item
+            android:id="@+id/nav_story"
+            android:icon="@drawable/ic_book"
+            android:title="剧情" />
+        <item
+            android:id="@+id/nav_rank"
+            android:icon="@drawable/ic_menu_rank"
+            android:title="排行榜" />
+        <item
+            android:id="@+id/nav_new"
+            android:icon="@drawable/ic_person"
+            android:title="每周关卡" />
+        <item
+            android:id="@+id/nav_draw"
+            android:icon="@drawable/ic_menu_draw"
+            android:title="像素画板" />
+        <item
+            android:id="@+id/nav_info"
+            android:icon="@drawable/ic_menu_info"
+            android:title="关于我们" />
+    </group>
+
+</menu>

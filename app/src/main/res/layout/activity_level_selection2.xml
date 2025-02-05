@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:openDrawer="start">
+
+
+    <!-- 主屏幕显示内容 -->
+    <include
+        android:id="@+id/app_bar_main"
+        layout="@layout/levels2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <!-- 侧滑菜单显示内容 -->
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:fitsSystemWindows="true"
+        app:headerLayout="@layout/nav_header"
+        app:menu="@menu/nav_drawer" />
+
+</androidx.drawerlayout.widget.DrawerLayout>
+
+    <!--<?xml version="1.0" encoding="utf-8"?>-->
+    <!--<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--    android:layout_width="match_parent"-->
+    <!--    android:layout_height="match_parent"-->
+    <!--    android:orientation="vertical">-->
+
+    <!--    &lt;!&ndash; 用户头像 &ndash;&gt;-->
+    <!--    <RelativeLayout-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:padding="16dp">-->
+
+    <!--        &lt;!&ndash; 用户头像 &ndash;&gt;-->
+    <!--        <ImageView-->
+    <!--            android:id="@+id/imageView_user_avatar"-->
+    <!--            android:layout_width="100dp"-->
+    <!--            android:layout_height="100dp"-->
+    <!--            android:src="@drawable/all"-->
+    <!--            android:contentDescription="User Avatar"-->
+    <!--            android:layout_alignParentStart="true"-->
+    <!--            android:layout_alignParentTop="true" />-->
+
+    <!--        &lt;!&ndash; 音乐开关 &ndash;&gt;-->
+    <!--        <Switch-->
+    <!--            android:id="@+id/switch_music_control"-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:text="音乐开关"-->
+    <!--            android:checked="true"-->
+    <!--            android:layout_toEndOf="@id/imageView_user_avatar"-->
+    <!--            android:layout_alignTop="@id/imageView_user_avatar"-->
+    <!--            android:layout_marginStart="16dp" />-->
+
+    <!--        &lt;!&ndash; 新手教程按钮 &ndash;&gt;-->
+    <!--        <Button-->
+    <!--            android:id="@+id/button_tutorial"-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:text="新手教程"-->
+    <!--            android:layout_toEndOf="@id/switch_music_control"-->
+    <!--            android:layout_alignTop="@id/imageView_user_avatar"-->
+    <!--            android:layout_marginStart="16dp" />-->
+
+    <!--        &lt;!&ndash; 用户名 &ndash;&gt;-->
+    <!--        <TextView-->
+    <!--            android:id="@+id/textView_username"-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:text="吴大海"-->
+    <!--            android:textSize="18sp"-->
+    <!--            android:layout_below="@id/imageView_user_avatar"-->
+    <!--            android:layout_marginTop="8dp"-->
+    <!--            android:layout_alignParentStart="true" />-->
+    <!--    </RelativeLayout>-->
+    <!--    <ScrollView-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="0dp"-->
+    <!--        android:layout_weight="1">-->
+
+
+    <!--        <LinearLayout-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:orientation="vertical">-->
+
+    <!--            &lt;!&ndash; 按钮1 &ndash;&gt;-->
+    <!--            <RelativeLayout-->
+    <!--                android:layout_width="match_parent"-->
+    <!--                android:layout_height="wrap_content">-->
+
+    <!--                <Button-->
+    <!--                    android:id="@+id/button1"-->
+    <!--                    android:layout_width="match_parent"-->
+    <!--                    android:layout_height="wrap_content"-->
+    <!--                    android:text="关卡一: Bird" />-->
+
+    <!--                <TextView-->
+    <!--                    android:id="@+id/textView_completion_rate_1"-->
+    <!--                    android:layout_width="40dp"-->
+    <!--                    android:layout_height="40dp"-->
+    <!--                    android:layout_alignEnd="@id/button1"-->
+    <!--                    android:layout_alignBottom="@id/button1"-->
+    <!--                    android:background="@drawable/circle_background"-->
+    <!--                    android:gravity="center"-->
+    <!--                    android:text="80"-->
+    <!--                    android:textColor="#FFFFFF" />-->
+    <!--            </RelativeLayout>-->
+
+    <!--            &lt;!&ndash; 按钮2 &ndash;&gt;-->
+    <!--            <RelativeLayout-->
+    <!--                android:layout_width="match_parent"-->
+    <!--                android:layout_height="wrap_content">-->
+
+    <!--                <Button-->
+    <!--                    android:id="@+id/button2"-->
+    <!--                    android:layout_width="match_parent"-->
+    <!--                    android:layout_height="wrap_content"-->
+    <!--                    android:text="关卡二: Face" />-->
+
+    <!--                <TextView-->
+    <!--                    android:id="@+id/textView_completion_rate_2"-->
+    <!--                    android:layout_width="40dp"-->
+    <!--                    android:layout_height="40dp"-->
+    <!--                    android:layout_alignEnd="@id/button2"-->
+    <!--                    android:layout_alignBottom="@id/button2"-->
+    <!--                    android:background="@drawable/circle_background"-->
+    <!--                    android:gravity="center"-->
+    <!--                    android:text="65"-->
+    <!--                    android:textColor="#FFFFFF" />-->
+    <!--            </RelativeLayout>-->
+
+    <!--            &lt;!&ndash; 按钮3 &ndash;&gt;-->
+    <!--            <RelativeLayout-->
+    <!--                android:layout_width="match_parent"-->
+    <!--                android:layout_height="wrap_content">-->
+
+    <!--                <Button-->
+    <!--                    android:id="@+id/button3"-->
+    <!--                    android:layout_width="match_parent"-->
+    <!--                    android:layout_height="wrap_content"-->
+    <!--                    android:text="关卡三: Cat" />-->
+
+    <!--                <TextView-->
+    <!--                    android:id="@+id/textView_completion_rate_3"-->
+    <!--                    android:layout_width="40dp"-->
+    <!--                    android:layout_height="40dp"-->
+    <!--                    android:layout_alignEnd="@id/button3"-->
+    <!--                    android:layout_alignBottom="@id/button3"-->
+    <!--                    android:background="@drawable/circle_background"-->
+    <!--                    android:gravity="center"-->
+    <!--                    android:text="90"-->
+    <!--                    android:textColor="#FFFFFF" />-->
+    <!--            </RelativeLayout>-->
+
+    <!--            &lt;!&ndash; 按钮4 &ndash;&gt;-->
+    <!--            <RelativeLayout-->
+    <!--                android:layout_width="match_parent"-->
+    <!--                android:layout_height="wrap_content">-->
+
+    <!--                <Button-->
+    <!--                    android:id="@+id/button4"-->
+    <!--                    android:layout_width="match_parent"-->
+    <!--                    android:layout_height="wrap_content"-->
+    <!--                    android:text="关卡四: Cars" />-->
+
+    <!--                <TextView-->
+    <!--                    android:id="@+id/textView_completion_rate_4"-->
+    <!--                    android:layout_width="40dp"-->
+    <!--                    android:layout_height="40dp"-->
+    <!--                    android:layout_alignEnd="@id/button4"-->
+    <!--                    android:layout_alignBottom="@id/button4"-->
+    <!--                    android:background="@drawable/circle_background"-->
+    <!--                    android:gravity="center"-->
+    <!--                    android:text="45"-->
+    <!--                    android:textColor="#FFFFFF" />-->
+    <!--            </RelativeLayout>-->
+
+    <!--            &lt;!&ndash; 按钮5 &ndash;&gt;-->
+    <!--            <RelativeLayout-->
+    <!--                android:layout_width="match_parent"-->
+    <!--                android:layout_height="wrap_content">-->
+
+    <!--                <Button-->
+    <!--                    android:id="@+id/button5"-->
+    <!--                    android:layout_width="match_parent"-->
+    <!--                    android:layout_height="wrap_content"-->
+    <!--                    android:text="关卡五: Pagoda" />-->
+
+    <!--                <TextView-->
+    <!--                    android:id="@+id/textView_completion_rate_5"-->
+    <!--                    android:layout_width="40dp"-->
+    <!--                    android:layout_height="40dp"-->
+    <!--                    android:layout_alignEnd="@id/button5"-->
+    <!--                    android:layout_alignBottom="@id/button5"-->
+    <!--                    android:background="@drawable/circle_background"-->
+    <!--                    android:gravity="center"-->
+    <!--                    android:text="75"-->
+    <!--                    android:textColor="#FFFFFF" />-->
+    <!--            </RelativeLayout>-->
+
+    <!--            &lt;!&ndash; 按钮6 &ndash;&gt;-->
+    <!--            <RelativeLayout-->
+    <!--                android:layout_width="match_parent"-->
+    <!--                android:layout_height="wrap_content">-->
+
+    <!--                <Button-->
+    <!--                    android:id="@+id/button6"-->
+    <!--                    android:layout_width="match_parent"-->
+    <!--                    android:layout_height="wrap_content"-->
+    <!--                    android:text="关卡六: Fish" />-->
+
+    <!--                <TextView-->
+    <!--                    android:id="@+id/textView_completion_rate_6"-->
+    <!--                    android:layout_width="40dp"-->
+    <!--                    android:layout_height="40dp"-->
+    <!--                    android:layout_alignEnd="@id/button6"-->
+    <!--                    android:layout_alignBottom="@id/button6"-->
+    <!--                    android:background="@drawable/circle_background"-->
+    <!--                    android:gravity="center"-->
+    <!--                    android:text="60"-->
+    <!--                    android:textColor="#FFFFFF" />-->
+    <!--            </RelativeLayout>-->
+
+    <!--            &lt;!&ndash; 按钮7 &ndash;&gt;-->
+    <!--            <RelativeLayout-->
+    <!--                android:layout_width="match_parent"-->
+    <!--                android:layout_height="wrap_content">-->
+
+    <!--                <Button-->
+    <!--                    android:id="@+id/button7"-->
+    <!--                    android:layout_width="match_parent"-->
+    <!--                    android:layout_height="wrap_content"-->
+    <!--                    android:text="关卡七: Running" />-->
+
+    <!--                <TextView-->
+    <!--                    android:id="@+id/textView_completion_rate_7"-->
+    <!--                    android:layout_width="40dp"-->
+    <!--                    android:layout_height="40dp"-->
+    <!--                    android:layout_alignEnd="@id/button7"-->
+    <!--                    android:layout_alignBottom="@id/button7"-->
+    <!--                    android:background="@drawable/circle_background"-->
+    <!--                    android:gravity="center"-->
+    <!--                    android:text="85"-->
+    <!--                    android:textColor="#FFFFFF" />-->
+    <!--            </RelativeLayout>-->
+
+    <!--            &lt;!&ndash; 按钮8 &ndash;&gt;-->
+    <!--            <RelativeLayout-->
+    <!--                android:layout_width="match_parent"-->
+    <!--                android:layout_height="wrap_content">-->
+
+    <!--                <Button-->
+    <!--                    android:id="@+id/button8"-->
+    <!--                    android:layout_width="match_parent"-->
+    <!--                    android:layout_height="wrap_content"-->
+    <!--                    android:text="关卡八: Ice cream" />-->
+    <!--                <TextView-->
+    <!--                    android:id="@+id/textView_completion_rate_8"-->
+    <!--                    android:layout_width="40dp"-->
+    <!--                    android:layout_height="40dp"-->
+    <!--                    android:layout_alignEnd="@id/button8"-->
+    <!--                    android:layout_alignBottom="@id/button8"-->
+    <!--                    android:background="@drawable/circle_background"-->
+    <!--                    android:gravity="center"-->
+    <!--                    android:text="85"-->
+    <!--                    android:textColor="#FFFFFF" />-->
+    <!--            </RelativeLayout>-->
+
+    <!--            &lt;!&ndash; 按钮3至按钮8的布局类似，这里省略 &ndash;&gt;-->
+
+    <!--        </LinearLayout>-->
+
+    <!--    </ScrollView>-->
+
+    <!--    <Button-->
+    <!--        android:id="@+id/button_logout"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:text="退出登录"-->
+    <!--        android:layout_gravity="end"-->
+    <!--        android:layout_marginTop="16dp"-->
+    <!--        android:layout_marginEnd="16dp" />-->
+    <!--</LinearLayout>-->

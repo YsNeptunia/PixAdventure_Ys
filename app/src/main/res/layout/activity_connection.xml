@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@drawable/pixheader">
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/connectButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="52dp"
+        android:rotation="-3"
+        android:rotationX="-5"
+        android:rotationY="5"
+        android:text="PixAdventure"
+        android:textAllCaps="false"
+        android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+        android:textColor="@color/material_dynamic_primary100"
+        android:textSize="51dp"
+        android:textStyle="bold" />
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textView4"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="-70dp"
+        android:rotation="-3"
+        android:rotationX="-5"
+        android:rotationY="5"
+        android:text="PixAdventure"
+        android:textAllCaps="false"
+        android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+        android:textColor="@color/material_dynamic_primary80"
+        android:textSize="50dp"
+        android:textStyle="bold" />
+
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/textView4"
+        android:layout_alignBottom="@+id/textView4"
+        android:layout_marginEnd="7dp"
+        android:layout_marginBottom="-46dp"
+        android:rotation="34"
+        android:rotationX="0"
+        android:rotationY="0"
+        app:srcCompat="@drawable/ic__blocks" />
+
+    <Button
+        android:id="@+id/connectButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="联机模式"
+        android:layout_centerInParent="true"
+        android:background="@color/bluePrimary"/>
+
+    <Button
+        android:id="@+id/singlePlayerButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="离线模式"
+        android:layout_below="@id/connectButton"
+        android:layout_centerHorizontal="true"
+        android:onClick="onsinglePlayerButton"
+        android:layout_marginTop="20dp"
+        android:background="@color/green"/>
+
+
+    <Button
+        android:id="@+id/exitButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="退出"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="20dp"
+        android:background="@color/green"/>
+
+    <Button
+        android:id="@+id/clearUsersButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        android:text="清除用户"
+        android:layout_below="@id/singlePlayerButton"
+        android:layout_centerHorizontal="true"
+        android:onClick="onClearUsersButtonClick"
+        android:layout_marginTop="20dp"
+        android:background="@color/green"/>
+
+
+</RelativeLayout>
